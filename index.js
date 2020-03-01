@@ -14,7 +14,6 @@ function genPictures(){
                 
     req.addEventListener('load', function(){
         var response = JSON.parse(req.responseText);
-        console.log(response);
         var artistArray = [];
         let j = 0;
         for(let i = 0; i < NUM_ARTISTS; i++)
@@ -29,7 +28,6 @@ function genPictures(){
 
             artistArray.push(obj);
         }
-        console.log(artistArray);
         
         for(let i = 0; i < artistArray.length; i++)
         {
@@ -54,18 +52,15 @@ function getTopAlbumArt(albumArtist, i)
 { 
 
    let albumRequest = new XMLHttpRequest();
-    console.log(albumArtist);
     
     let albumURL = 'https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&mbid=' + albumArtist.mbid + '&api_key=' + apiKey + '&format=json';
     
-    console.log(albumURL);
                 
     albumRequest.open('GET', albumURL, true);
     albumRequest.send(null);
     
      albumRequest.addEventListener('load', function(){
         let albumResponse = JSON.parse(albumRequest.responseText);
-         console.log(albumResponse);
    
          
 

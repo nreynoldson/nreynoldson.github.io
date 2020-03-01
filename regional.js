@@ -1,3 +1,4 @@
+var NUM_ARTISTS = 10; 
 var apiKey = '3551f19d2bc349b94217547561ddb15c';
 document.addEventListener('DOMContentLoaded', bindButtons);
 
@@ -23,13 +24,13 @@ function bindButtons(){
             listTitle.appendChild(document.createElement('hr'));
                 
                 
-                var top10 = [];
+                var artistArray = [];
                 for(var i = 0; i < 10; i++){
-                    top10.push(response.topartists.artist[i]);
-                    console.log(top10);
+                    artistArray.push(response.topartists.artist[i]);
+                    
                 let regionArtist = document.createElement("li");
                     document.getElementById("regionList").appendChild(regionArtist);
-                    regionArtist.textContent = top10[i].name;
+                    regionArtist.textContent = artistArray[i].name;
                     
                     let listeners = document.createElement("ul");
                    listeners.className = "subList";
@@ -37,7 +38,7 @@ function bindButtons(){
                     let bullet = document.createElement("li");
                     bullet.className = "subBullet";
                     listeners.appendChild(bullet);
-                     bullet.textContent = "Listeners: " + parseInt(top10[i].listeners).toLocaleString();
+                     bullet.textContent = "Listeners: " + parseInt(artistArray[i].listeners).toLocaleString();
                 }
                 
                 

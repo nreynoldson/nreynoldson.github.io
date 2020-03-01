@@ -66,7 +66,6 @@ function getArtistTags(artist, i)
    var tagRequest = new XMLHttpRequest();
     
     var tagURL = 'https://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&mbid=' + artist.mbid + '&api_key=' + apiKey + '&format=json';
-    console.log(tagURL);
 
                 
     tagRequest.open('GET', tagURL, true);
@@ -74,7 +73,6 @@ function getArtistTags(artist, i)
     
      tagRequest.addEventListener('load', function(){
         var tagResponse = JSON.parse(tagRequest.responseText);
-         console.log(tagResponse);
  
          
         artist.topTags =[];
