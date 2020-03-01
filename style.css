@@ -1,0 +1,170 @@
+body { 
+    background-color: #FFFFFF; /* light gray */ 
+    font-family: 'open sans'; 
+    font-weight: 500; 
+    font-size: 14px; 
+    color: #1e1e1e; /* dark gray */ 
+}
+
+h1 { 
+    text-align: center;
+    font-family: 'Vollkorn';
+    font-style: bold;
+    font-weight:bolder;
+    font-size:50px;
+
+    color: #839788; 
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+
+h2 { 
+    
+    text-align: center;
+    font-family: 'Vollkorn';
+    font-style: bold;
+    font-weight:bolder;
+    font-size: 35px;
+    font-style: bold; 
+    color: #839788; 
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    align-content: center;
+    text-align: center;
+    color: #333333; 
+    font-size: 30px; 
+    font-weight: bold; 
+
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.subList{
+    margin-top: 5px;
+    list-style-type: none;
+    color: #565656; 
+    font-size: 12px; 
+    font-weight: bold; 
+    padding: 0px;
+}
+
+li{
+    text-align:justify;
+    font-style:bold;
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+.subBullet{
+    font-style:bold;
+    font-size: 10px;
+    color: 
+}
+
+a {
+    color: #ffffff; /* dark gray */ 
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.textfield {
+    width: 90%;
+    border-radius: 25px;
+    padding-left: 10px;
+ 
+}
+
+button {
+    border-radius: 25px;
+}
+
+.buttonholder {
+    text-align: center;
+}
+
+#myprofile{
+    height: 40px;
+    width: 60%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: #a63d40;
+}
+
+#profile{
+    color: #FFFFFF;
+    font-style: bold;
+
+}
+
+#intro {
+    margin-bottom: 50px;
+}
+
+iframe {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#ollie {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+
+}
+
+
+#comment{
+    width:100%;
+    height:150px;
+    line-height:3em;
+    overflow:scroll;
+    padding:5px;
+    border-radius: 5px;
+}
+
+#commentSubmit{
+    width: 100%;
+    padding-left:0px;
+}
+
+.contactMe {
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+label {
+    padding-right: 5px;
+}
+
+#randomOllie{
+    color: #004060;
+}
+
+figCaption {
+    align-content: center;
+    text-align: center;
+}
+
+hr{
+    border-top-style:dashed;
+    border-top-width: thick;
+    width: 100%;
+}

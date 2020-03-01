@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vollkorn:400,900&display=swap" rel="stylesheet">
+    <title>CS290 Final Project</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class = "nav-item nav-link">HOME</a>
+        <a href="similarArtist.html" class = "nav-item nav-link active">SIMILAR ARTISTS</a>
+        <a href="topRegion.html" class = "nav-item nav-link">TOP BY LOCATION</a>
+        <a href="about.html" class = "nav-item nav-link">ABOUT/CONTACT</a>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <h1>About</h1>
+                
+                <p>Hi there! My name is Nicole and I am originally from Ontario, Canada, but I am currently living in Seattle with my husband Kaden and our sweet pup Ollie.</p>
+
+                <figure>
+                    <img id="ollie" src="images/Ollie.jpg" height = "300">  
+                    <figcaption><a id='randomOllie' download="agoodboy.jpg">Click to download a random Ollie picture</a></figcaption>
+                </figure>
+    
+                <p>I made this website because I am an avid music listener and enjoying dissecting my listening habits.</p>
+                <p>Click the button below to check out my LastFM profile - also take a listen to the playlist I curated with some of my favourite songs from my top 20 artists according to last FM. </p>
+
+                <div class="buttonholder"> 
+                    <button id="myprofile"><a href="https://www.last.fm/user/nreynoldson" id="profile">My LastFM Profile</a></button>
+                </div>
+
+                <iframe src="https://open.spotify.com/embed/playlist/16lEu4n5uXEw5He8Tk5bUa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <fieldset class="contactMe">
+                    <legend>Have any comments? Want to contact me?</legend>
+                    <form>
+                        <label>Name: </label><input class= "textfield" type="text" name="contactName" placeholder="Name..."> <br>
+                    
+                        <label>Email: </label><input class ="textfield" type="email" name="contactEmail" placeholder="Email..."> <br>
+                    
+                        <label>Comments:</label><br><textarea id="comment" name="comments" placeholder="What's on your mind?"></textarea>
+                    
+                        <input id="commentSubmit" type="submit" value="Submit" formaction="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" formmethod="post">
+                    </form>
+                </fieldset>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>  
+    
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    <script src="ollie.js"></script>
+    
+</body>
+</html>
