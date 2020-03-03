@@ -93,15 +93,6 @@ button {
     text-align: center;
 }
 
-#myprofile{
-    height: 40px;
-    width: 60%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    background-color: #a63d40;
-}
-
 #profile{
     color: #FFFFFF;
     font-style: bold;
