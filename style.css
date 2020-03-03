@@ -105,7 +105,21 @@ button {
 #profile{
     color: #FFFFFF;
     font-style: bold;
+    background-color: #a63d40;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
 
+#profile:hover{
+    text-decoration: underline;
+    
 }
 
 #intro {
